@@ -6,7 +6,7 @@ sidebar_position: 1
 
 Yuk, belajar **Javascript dibawah 5 menit!**.
 
-## Halo, selamat datang!
+## Halo, selamat datang&#33;
 
 Halo! selamat datang di tutorial Pemrograman Javascript berbahasa Indonesia!
 Saya sangat senang untuk kamu berada disini, itu berarti kamu adalah orang yang dari tidak mengetahui apapun tentang bahasa JavaScript menjadi seorang ahli bahasa JavaScript!
