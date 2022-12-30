@@ -16,3 +16,5 @@ Belajar JavaScript adalah pilihan yang bagus! Karena akan membuka cakrawala kamu
 - Backend Web Developer([Node JS](https://nodejs.org/en/))
 - Aplikasi Desktop([Electron](https://www.electronjs.org/))
 - Aplikasi Mobile([React Native](https://reactnative.dev/))
+
+Tanpa perlu berlama-lama lagi, mari kita mulai!
