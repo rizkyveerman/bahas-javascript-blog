@@ -1,0 +1,41 @@
+---
+sidebar_position: 3
+---
+
+# Tipe Data JavaScript
+
+Dalam bahasa pemrograman apapun, setiap value memiliki tipe yang beragam tergantung jenis data seperti apa yang kita simpan ke sebuah variable.
+
+:::info
+Pada pemrograman Javascript, sebuah value dapat berupa antara _object_ atau _primitive value_.
+:::
+
+Contoh value berupa **object** itu seperti ini:
+
+```javascript
+const namaLengkap = {
+  namaDepan: "Cinthya",
+  namaBelakang: "Rizky",
+};
+```
+
+Contoh value berupa **primitive** itu seperti ini:
+
+```javascript
+const namaLengkap = "Cinthya Rizky";
+```
+
+## Primitive Value
+
+Sekarang mari fokus ke _primitive value_ dulu.
+Ada 7 jenis primitive value:
+
+| No. | Tipe data       | Deskripsi                                                                                                                              |
+| --- | --------------- | :------------------------------------------------------------------------------------------------------------------------------------- |
+| 1.  | **String**      | Berupa huruf, kata, atau kalimat yang ditandai dengan tanda petik satu(' ') atau dua(" ").                                             |
+| 2.  | **Number**      | Berupa bilangan bulat atau desimal. Misalkan ada number `23` maka dia sebenarnya adalah `23.0`.                                        |
+| 3.  | **Boolean**     | Digunakan untuk pengkondisian yang menghasilkan antara ya atau tidak, dengan value `true` untuk ya dan `false` untuk tidak.            |
+| 4.  | **Undefined**   | Tidak ada value.                                                                                                                       |
+| 5.  | **Null**        | Value spesial yang berarti 'tidak ada', 'kosong', atau 'tidak diketahui'.                                                              |
+| 6.  | **Symbol**(ES5) | Adalah Untuk memberi identifier unik ke object. _Sekarang sudah tidak terlalu berguna._                                                |
+| 7.  | **BigInt**      | Digunakan untuk menyimpan bilangan bulat(integer) yang berukuran besar bahkan dapat melewati anjuran batas aman yang telah ditentukan. |
