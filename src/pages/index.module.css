@@ -4,10 +4,15 @@
  */
 
 .heroBanner {
+  height: 80vh;
   padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+  background-color: var(--ifm-color-primary);
+  background: url("../../static/img/bahasjs-stars.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media screen and (max-width: 996px) {

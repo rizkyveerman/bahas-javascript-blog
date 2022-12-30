@@ -6,8 +6,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Bahasa Javascript",
-  tagline: "Tutorial Javascript Bahasa Indonesia",
+  title:
+    "Cara yang mudah, menyenangkan, dan efektif untuk belajar bahasa Javascript!",
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -23,8 +23,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "en",
-    locales: ["en"],
+    defaultLocale: "id",
+    locales: ["id"],
   },
 
   presets: [
@@ -57,10 +57,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "BahasJS",
         logo: {
           alt: "BahasJS Logo",
-          src: "img/logo.svg",
+          src: "img/bahasjs.png",
         },
         items: [
           {

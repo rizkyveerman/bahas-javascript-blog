@@ -12,5 +12,55 @@ Sebagai contoh: Ada deklarasi sebuah variable `kardusBuku = ["Buku Gambar", "Buk
 
 ## 3 Jenis Keyword Variable
 
-JavaScript punya 3 Keyword untuk mendeklarasikan sebuah variable, yaitu: `var` , `let` , dan `const`.
-`var` dianjurkan untuk tidak digunakan lagi, jadi saya hanya akan menjelaskan `let` dan `const` saja.
+Javascript punya 3 Keyword untuk mendeklarasikan sebuah variable, yaitu: `var` , `let` , dan `const`.
+
+**`var` digunakan untuk variable yang valuenya kemungkinan akan berubah.**
+`var` juga bisa dideklarasikan tanpa memberi value.
+
+```javascript
+//deklarasi dengan value
+var nama = "Cinta";
+
+//deklarasi tanpa value
+var usia;
+
+//memberi value kepada variable
+usia = 12;
+```
+
+**`let` digunakan untuk variable yang valuenya kemungkinan akan berubah.**
+`let` juga bisa dideklarasikan tanpa memberi value.
+
+```javascript
+//deklarasi dengan value
+let nama = "Cinta";
+
+//deklarasi tanpa value
+let usia;
+
+//memberi value kepada variable
+usia = 12;
+```
+
+**`const` digunakan untuk variable yang memiliki value tetap(konstanta) atau tidak dapat diganti.**
+Dengan menggunakan `const` kamu wajib memberi value.
+
+```Javascript
+    const nama = "Cinta";
+```
+
+## Penamaan variable yang baik dan benar
+
+Pemberian nama sebuah variable ada aturannya dengan tujuan supaya dapat dipahami oleh kita sendiri dan teman developer lainnya. Mari kita bahas seperti apa _best practice_-nya.
+
+1. Menggunakan camelCase
+   - camelCase adalah teknik penamaan dengan memberi kapital hanya dari kata kedua dari nama variablenya.
+2. Tidak diawali dengan huruf kapital
+3. Tidak boleh diawali dengan angka
+4. Dapat merepresentasikan valuenya
+5. Tidak terlalu panjang
+6. Tidak terlalu singkat.
+
+## Selesai&#33;
+
+Itulah yang perlu kamu ketahui tentang value dan variable di Javascript Dasar. Pastikan kamu **memahaminya dengan baik** karena keduanya adalah salah satu hal penting dalam bahasa pemrograman(tidak hanya Javascript).
