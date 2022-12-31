@@ -6,8 +6,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title:
-    "Cara yang mudah, menyenangkan, dan efektif untuk belajar bahasa Javascript!",
+  title: "Bahas Javascript!",
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
