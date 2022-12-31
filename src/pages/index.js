@@ -6,6 +6,7 @@ import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 
 import styles from "./index.module.css";
+import Button from "../components/widgets/buttons/Button";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -14,14 +15,7 @@ function HomepageHeader() {
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro"
-          >
-            Belajar JavaScript - 5min ⏱️
-          </Link>
-        </div>
+        <Button>Belajar JavaScript - 5min ⏱️</Button>
       </div>
     </header>
   );
