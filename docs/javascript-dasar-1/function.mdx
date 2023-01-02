@@ -16,7 +16,7 @@ function tambah(a, b) {
 tambah(1, 2); //output = 3
 ```
 
-### Struktur `Function`:
+## Struktur Function:
 
 | Struktur  | Deskripsi                                                                                                                                                                      |
 | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -24,3 +24,21 @@ tambah(1, 2); //output = 3
 | Parameter | Yang dibutuhkan method, ditulis didalam kurung/_parentheses_ `()`. Jika method tidak membutuhkan parameter, maka tidak perlu memberi apapun didalam kurung _parentheses_ `()`. |
 | Body      | Ini adalah code block, dimana kita akan menulis semua kodingan kita yang berkaitan dengan tugas method tersebut.                                                               |
 | return    | Value yang harus dikembalikan oleh method. return ada didalam body.                                                                                                            |
+
+## Function Argument
+
+Function argument adalah value asli yang diberikan kepada function.
+Angka 1 dan 2 berikut akan menjadi argument dari function `tambah`.
+
+```javascript
+tambah(1, 2);
+```
+
+## Jenis pemanggilan function
+
+| Nama              | Deskripsi                                                                                                                            |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| Call by name      | Memanggil function menggunakan nama function.Contoh `tambah()`                                                                       |
+| Call by reference | Memanggil function sebagai referensi. Caranya sama seperti call by value akan tetapi tidak menggunakan tanda kurung. Contoh `tambah` |
+| Call by result    | Value parameter disalin ulang menjadi argument.                                                                                      |
+| Call by value     | Argument akan dieksekusi, dan hasilnya akan diberikan kepada function.                                                               |
