@@ -4,7 +4,9 @@ sidebar_position: 4
 
 # Function
 
-Function merupakan satu kesatuan instruksi program yang bertugas untuk menjalankan satu tugas spesifik. Untuk menjalankan program didalam function kita hanya perlu memanggil nama function tersebut.
+Function merupakan satu kesatuan instruksi program yang bertugas untuk menjalankan satu tugas spesifik.
+Untuk membuat function, kita menggunakan keyword `function` diikuti dengan `namaFunction`, tanda kurung`(...)`, dan kemudian kurung kurawal`{...}`.
+Untuk menjalankan program didalam function kita hanya perlu memanggil nama function tersebut. Function juga dapat mengembalikan data juga dalam bentuk value, menggunakan keyword `return`.
 
 ```javascript
 //membuat function
@@ -18,16 +20,66 @@ tambah(1, 2); //output = 3
 
 ## Struktur Function:
 
-| Struktur  | Deskripsi                                                                                                                                                                      |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Nama      | Nama method. Aturan penulisan sama dengan variable.                                                                                                                            |
-| Parameter | Yang dibutuhkan method, ditulis didalam kurung/_parentheses_ `()`. Jika method tidak membutuhkan parameter, maka tidak perlu memberi apapun didalam kurung _parentheses_ `()`. |
-| Body      | Ini adalah code block, dimana kita akan menulis semua kodingan kita yang berkaitan dengan tugas method tersebut.                                                               |
-| return    | Value yang harus dikembalikan oleh method. return ada didalam body.                                                                                                            |
+| Struktur  | Deskripsi                                                                                                                                                                                  |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Nama      | Nama method. Aturan penulisan sama dengan variable.                                                                                                                                        |
+| Parameter | Input data. Yang dibutuhkan method, ditulis didalam kurung/_parentheses_ `()`. Jika method tidak membutuhkan parameter, maka tidak perlu memberi apapun didalam kurung _parentheses_ `()`. |
+| Body      | Ini adalah code block, dimana kita akan menulis semua kodingan kita yang berkaitan dengan tugas method tersebut.                                                                           |
+| return    | Output data. Value yang akan diberikan oleh function. `return` ada didalam body.                                                                                                           |
+
+## Cara Membuat Function di Javascript
+
+Didalam pemrograman Javascript, kita bisa membuat function dengan beberapa cara, antara lain:
+
+### 1. Function Declaration
+
+Function declaration hanya function biasa yang sering kita jumpai di beberapa bahasa pemrograman lain.
+Function declaration bisa diakses secara global, baik dari barisan kode diatasnya maupun dibawahnya.
+
+```javascript
+tambah(1, 2); //bisa diakses dari sini
+
+function tambah(a, b) {
+  return a + b;
+}
+
+tambah(1, 2); // dan bisa diakses dari sini
+```
+
+### 2. Function Expression
+
+Function Expression merupakan function yang dideklarasikan menjadi sebuah variable. Bisa menggunakan `var`, `let`, atau `const`.
+Function expression hanya bisa diakses oleh kodingan dibawahnya.
+
+```javascript
+tambah(1, 2); //tidak bisa diakses dari sini, undefined
+
+const tambah = function (a, b) {
+  return a + b;
+};
+
+tambah(1, 2); // tapi bisa diakses dari sini
+```
+
+### 3. Arrow Function
+
+Arrow function sama seperti function expression tapi lebih singkat dari 2 jenis function diatas. Dan arrow function juga tidak ada `this`.
+
+```javascript
+tambah(1, 2); //tidak bisa diakses dari sini, undefined
+
+const tambah = (a, b) => a + b;
+
+tambah(1, 2); // tapi bisa diakses dari sini
+```
+
+## Function Parameter
+
+Parameter kurang lebih sama seperti variable yang merupakan value bayangan untuk mewakili input data yang akan diberikan kepada function.
 
 ## Function Argument
 
-Function argument adalah value asli yang diberikan kepada function.
+Function argument adalah value sesungguhnya yang akan mengisi parameter.
 Angka 1 dan 2 berikut akan menjadi argument dari function `tambah`.
 
 ```javascript
@@ -42,3 +94,5 @@ tambah(1, 2);
 | Call by reference | Memanggil function sebagai referensi. Caranya sama seperti call by value akan tetapi tidak menggunakan tanda kurung. Contoh `tambah` |
 | Call by result    | Value parameter disalin ulang menjadi argument.                                                                                      |
 | Call by value     | Argument akan dieksekusi, dan hasilnya akan diberikan kepada function.                                                               |
+
+Function merupakan elemen penting dalam dunia pemrograman, pastikan kamu memahaminnya dengan baik.
