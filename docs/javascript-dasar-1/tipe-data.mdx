@@ -7,10 +7,10 @@ sidebar_position: 3
 Dalam bahasa pemrograman apapun, setiap value memiliki tipe yang beragam tergantung jenis data seperti apa yang kita simpan ke sebuah variable.
 
 :::info
-Pada pemrograman Javascript, sebuah value dapat berupa antara _object_ atau _primitive value_.
+Pada pemrograman Javascript, sebuah value dapat berupa antara _object(non-primitive)_ atau _primitive value_.
 :::
 
-Contoh value berupa **object** itu seperti ini:
+Contoh value berupa **object(non-primitive)** itu seperti ini:
 
 ```javascript
 const namaLengkap = {
@@ -38,32 +38,70 @@ console.log(typeof namaLengkap);
 
 ## Primitive Value
 
-Sekarang mari fokus ke _primitive value_ dulu.
-Ada 7 jenis primitive value:
+Primitive value hanya bisa menyimpan satu buah value. Ada 7 jenis primitive value:
 
-| No. | Tipe data       | Deskripsi                                                                                                                              |
-| --- | --------------- | :------------------------------------------------------------------------------------------------------------------------------------- |
-| 1.  | **String**      | Berupa huruf, kata, atau kalimat yang ditandai dengan tanda petik satu(' ') atau dua(" ").                                             |
-| 2.  | **Number**      | Berupa bilangan bulat atau desimal. Misalkan ada number `23` maka dia sebenarnya adalah `23.0`.                                        |
-| 3.  | **Boolean**     | Digunakan untuk pengkondisian yang menghasilkan antara ya atau tidak, dengan value `true` untuk ya dan `false` untuk tidak.            |
-| 4.  | **Undefined**   | Tidak ada value.                                                                                                                       |
-| 5.  | **Null**        | Value spesial yang berarti 'tidak ada', 'kosong', atau 'tidak diketahui'.                                                              |
-| 6.  | **Symbol**(ES5) | Adalah Untuk memberi identifier unik ke object. _Sekarang sudah tidak terlalu berguna._                                                |
-| 7.  | **BigInt**      | Digunakan untuk menyimpan bilangan bulat(integer) yang berukuran besar bahkan dapat melewati anjuran batas aman yang telah ditentukan. |
+| No. | Tipe data       | Deskripsi                                                                                                                       |
+| --- | --------------- | :------------------------------------------------------------------------------------------------------------------------------ |
+| 1.  | **String**      | Berupa huruf, kata, atau kalimat yang ditandai dengan tanda petik satu(' ') atau dua(" ").                                      |
+| 2.  | **Number**      | Berupa bilangan bulat atau desimal. Misalkan ada number `23` maka dia sebenarnya adalah `23.0`.                                 |
+| 3.  | **Boolean**     | Digunakan untuk pengkondisian yang menghasilkan antara ya atau tidak, dengan value `true` untuk ya dan `false` untuk tidak.     |
+| 4.  | **Undefined**   | Tidak ada value.                                                                                                                |
+| 5.  | **Null**        | Value spesial yang berarti 'tidak ada', 'kosong', atau 'tidak diketahui'.                                                       |
+| 6.  | **Symbol**(ES6) | Symbol merupakan fitur baru yang dirilis pada Javascript ES6. Symbol digunakan untuk menyimpan anonymous dan unique value.      |
+| 7.  | **BigInt**      | Digunakan untuk menyimpan bilangan bulat(integer) yang memiliki jumlah digit melewati batas aman jumlah digit tipe data Number. |
 
 Contoh penggunaan tipe data primitive:
 
 ```javascript
 const nama = "Cinthya Rizky";
 const usia = 12;
+const tinggiBadan = 1.8;
 const perempuan = true;
 const hobi = undefined;
+const alergi = null;
+const mySymbol = Symbol("uniqueIDblablabla");
+const bigInteger = 234567890123456789012345678901234567890;
 
-console.log(nama, usia, perempuan, hobi);
-//Output : Cinthya Rizky, 12, true, undefined
-
-console.log(typeof nama, typeof usia, typeof perempuan, typeof hobi);
-//Output : string, number, boolean, undefined
+console.log(
+  typeof nama, //string
+  typeof usia, //number
+  typeof tinggiBadan, //number
+  typeof perempuan, //boolean
+  typeof hobi, //undefined
+  typeof alergi, //object(bug di Javascript: null dianggap object value)
+  typeof mySymbol, //Symbol
+  typeof bigInt //bigint
+);
 ```
 
-##
+## Object Value(non-primitive)
+
+Object digunakan untuk menyimpan sekumpulan data dengan format pasangan _key-value_.
+Value yang berupa object juga disebut dengan _non-primitive_ value.
+Dengan object value, kita dapat menyimpan lebih dari satu values.
+
+```javascript
+//object
+const Rizky = {
+  namaLengkap: "Cinthya Rizky",
+  umur: 22,
+};
+
+//array
+const olahraga = [
+  "Sepakbola",
+  "Futsal",
+  "Badminton",
+  "Tenis",
+  "Voli",
+  "Basketball",
+];
+```
+
+:::note
+Perlu diingat, (di Javascript) tipe data yang bukan primitive maka dia adalah tipe data object.
+:::
+
+### Selesai!
+
+Itulah yang perlu kamu ketahui tentang tipe data di Javascript. Pastikan kamu **memahaminya dengan baik** karena tipe data merupakan salah satu hal terpenting dalam pemrograman(tidak hanya Javascript).
