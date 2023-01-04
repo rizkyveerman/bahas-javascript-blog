@@ -16,6 +16,10 @@ function HomepageHeader() {
           <div className={styles.africa}>
             <div className={styles.africa1}></div>
             <div className={styles.africa2}></div>
+            <div className={styles.africa3}></div>
+            <div className={styles.africa4}></div>
+            <div className={styles.africa5}></div>
+            <div className={styles.africa6}></div>
           </div>
         </div>
       </div>
