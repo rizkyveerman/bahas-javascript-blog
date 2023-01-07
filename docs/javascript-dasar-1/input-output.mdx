@@ -24,7 +24,50 @@ Berikut beberapa cara untuk mendapatkan output dalam pemrograman Javascript:
 
 `innerHTML` berarti memasukkan sesuatu kedalam elemen html. Untuk menggunakan `innerHTML` kamu perlu memanggil element HTML kemudian diberi value innerHTML dengan cara seperti berikut:
 
-```javascript
-const container = document.querySelector(".my-container");
-container.innerHTML = "Aku adalah container!";
+Perhatikan kodingan Javascript didalam tag `<script>`!
+
+```html
+<main>
+  <div class="my-container"></div>
+  <script>
+    const container = document.querySelector(".my-container");
+    container.innerHTML = "Aku adalah container!";
+  </script>
+</main>
 ```
+
+### 2. Document Write
+
+Penggunaan `document.write()` sangat tidak dianjurkan, gunakan ini untuk tujuan tertentu seperti testing. Baca penjelasan lebih detail [disini.](https://developer.mozilla.org/en-US/docs/Web/API/Document/write)
+
+### 3. Window Alert
+
+Penggunaan `window.alert()` akan memanfaatkan object window yang disediakan browser.
+
+```html
+<main>
+  <div class="my-container"></div>
+  <script>
+    const container = document.querySelector(".my-container");
+    window.alert("Aku adalah container!");
+  </script>
+</main>
+```
+
+### 4. Menggunakan console
+
+Penggunaan `console` akan memanfaatkan object console yang disediakan window browser. Console biasa digunakan untuk proses [🪲debugging.](https://en.wikipedia.org/wiki/Debugging) Akan tetapi yang paling sering digunakan untuk melihat output adalah method `log()`.
+
+```html
+<main>
+  <div class="my-container">Aku adalah container!</div>
+  <script>
+    const container = document.querySelector(".my-container");
+    console.log(container);
+  </script>
+</main>
+```
+
+### Selesai!
+
+Itulah pengetahuan dasar yang perlu kamu ketahui tentang input dan output di Javascript. Pastikan kamu **memahaminya dengan baik** karena input dan output merupakan salah satu hal terpenting dalam pemrograman(tidak hanya Javascript).
