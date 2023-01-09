@@ -2,9 +2,29 @@
 sidebar_position: 7
 ---
 
-# Array di Javascript
+# Array
 
 Didalam pemrograman, kita akan sering menggunakan data. Entah data itu kita sendiri yang bikin, atau datang dari manapun, yang kemudian data itu akan kita olah agar bisa digunakan di aplikasi kita. Untuk dapat mengolah data, kita perlu mempelajari struktur data, salah satunya array.
+
+## Mengapa menggunakan array&#63;
+
+```javascript
+const hobi1 = "olahraga";
+const hobi2 = "membaca buku";
+const hobi3 = "menulis";
+```
+
+Sangatlah tidak efisien ketika kita perlu menyimpan beberapa value berbeda dengan kategori yang sama, kedalam variable yang berbeda.
+:::info Bayangkan!
+Kamu memiliki 10 hobi, atau 20? kamu harus membuat 20 variable! Hal ini hanya membuat program lambat dan kodingan kita menjadi ruwet atau susah dimantain kedepannya.
+:::
+Solusinya adalah menggunakan array. Jadi, alih-alih seperti itu, akan lebih baik jika kita menyimpan hobi kedalam satu variable:
+
+```javascript
+const hobi = ["olahraga", "membaca buku", "menulis"];
+```
+
+## Apa itu array&#63;
 
 Array merupakan pengelompokan data-data yang sama menjadi satu kelompok.
 Dalam pemrograman Javascript, array bisa menyimpan tipe data apapun. Array bisa kita simpan kedalam variable seperti halnya value biasa.
@@ -12,12 +32,10 @@ Contoh:
 
 ```javascript
 const bilanganBulat = [1, 2, 3, 4, 5, 6, 7];
-const hobi = ["Olahraga", "Membaca buku", "Menulis Blog"];
+const hobi = ["olahraga", "membaca buku", "menulis"];
 const angka = ["satu", 2, "tiga", true, null, undefined, Object];
 ```
 
 :::caution Himbauan!
 Meskipun sebuah array dapat menyimpan value dengan tipe data yang berbeda, akan tetapi saya tetap menganjurkan teman-teman untuk memperhatikan apakah satu data dengan data lain saling berkorelasi atau tidak. Contoh array yang baik adalah seperti variable `bilanganBulat` dan `hobi` diatas.
 :::
-
----on progress---
